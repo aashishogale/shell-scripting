@@ -1,0 +1,7 @@
+# /bin/bash -x
+for (( count=10; count<100; count++ ))
+do
+	echo "${count:0:1}"
+	echo "${count:0:2}"
+done
+

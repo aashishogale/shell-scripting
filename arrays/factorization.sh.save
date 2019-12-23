@@ -1,0 +1,13 @@
+#! /bin/bash  -x
+declare -a  array
+read -p "enter the number" number
+count
+for (( i=2; i<=$number; i++ ));
+do
+	if  [ $((number%$i)) == 0 ]
+	then
+        echo $i
+        number=$((number/$i))
+  	fi
+	i = $(( $i*$i ))
+done 
